@@ -38,7 +38,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4">
-              Horários dos Cultos
+              Horários das Reuniões
             </h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
               Junte-se a nós em nossos momentos de adoração e comunhão. Todos são bem-vindos!
@@ -74,7 +74,7 @@ export default function Home() {
                 <Clock className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-serif font-semibold text-white mb-2">Reunião de Oração</h3>
-              <p className="text-3xl font-bold text-rose-400 mb-2">19:00</p>
+              <p className="text-3xl font-bold text-rose-400 mb-2">19:30</p>
               <p className="text-gray-300 font-medium">Quarta-feira</p>
               <p className="text-sm text-gray-400 mt-3 bg-gray-800 rounded-lg py-2 px-3">Oração • Estudo Bíblico</p>
             </div>
