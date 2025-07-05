@@ -1,4 +1,4 @@
-import { Heart, BookOpen, Users, Church } from 'lucide-react';
+import { Heart, BookOpen, Users, Church, FileText } from 'lucide-react';
 
 export default function Sobre() {
   return (
@@ -138,11 +138,23 @@ export default function Sobre() {
                   pela graça, a igreja local e as ordenanças bíblicas.
                 </p>
 
-                <p className="text-lg leading-relaxed">
+                <p className="text-lg leading-relaxed mb-6">
                   Esta confissão nos serve como um padrão secundário de fé, sempre subordinado
                   às Escrituras Sagradas, que são nossa autoridade suprema e final em todas
                   as questões de fé e prática cristã.
                 </p>
+
+                <div className="text-center">
+                  <a
+                    href="/confissao-de-fe-batista-1689.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                  >
+                    <FileText className="h-5 w-5" />
+                    Ler Confissão de Fé Completa (PDF)
+                  </a>
+                </div>
               </div>
             </div>
           </div>

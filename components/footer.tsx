@@ -30,6 +30,14 @@ export default function Footer() {
               <a href="/sobre" className="block text-gray-300 hover:text-red-400 transition-colors">
                 Sobre
               </a>
+              <a
+                href="/confissao-de-fe-batista-1689.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-gray-300 hover:text-red-400 transition-colors"
+              >
+                Confissão de Fé (PDF)
+              </a>
             </div>
           </div>
 
