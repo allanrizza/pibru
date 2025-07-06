@@ -1,6 +1,17 @@
+'use client';
+
 import { Clock, MapPin, Users, BookOpen } from 'lucide-react';
 
 export default function Home() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
   return (
     <div className="min-h-screen bg-gray-900">
       {/* Hero Section */}
@@ -16,18 +27,18 @@ export default function Home() {
               Uma comunidade de fé comprometida com a Palavra de Deus e a pregação do Evangelho
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="#horarios"
+              <button
+                onClick={() => scrollToSection('horarios')}
                 className="bg-red-custom-accent hover:bg-red-custom-secondary text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 Ver Horários dos Cultos
-              </a>
-              <a
-                href="#localizacao"
+              </button>
+              <button
+                onClick={() => scrollToSection('localizacao')}
                 className="border-2 border-white text-white hover:bg-white hover:text-red-custom-primary font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105"
               >
                 Como Chegar
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -55,6 +66,12 @@ export default function Home() {
               <p className="text-3xl font-bold text-amber-400 mb-2">09:00</p>
               <p className="text-gray-300 font-medium">Domingo - Manhã</p>
               <p className="text-sm text-gray-400 mt-3 bg-gray-800 rounded-lg py-2 px-3">Escola Bíblica Dominical</p>
+              <div className="mt-4 p-3 bg-amber-900/30 border border-amber-500/50 rounded-lg">
+                <p className="text-xs text-amber-200 font-medium">
+                  <span className="font-semibold">Atenção:</span> No primeiro domingo do mês não temos EBD.
+                  A manhã é reservada para um momento especial de comunhão entre os irmãos da igreja.
+                </p>
+              </div>
             </div>
 
             {/* Sunday Evening - Culto Solene */}
