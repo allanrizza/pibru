@@ -22,7 +22,7 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="bg-[#3D0F18] text-[#FAF7F2]">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-28 md:py-36">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-36">
           <div className="text-center">
             <p className="text-[#C9A84C] font-heading text-sm tracking-[0.3em] uppercase mb-6">
               Sola Scriptura &middot; Sola Fide &middot; Sola Gratia &middot; Solus Christus &middot; Soli Deo Gloria
